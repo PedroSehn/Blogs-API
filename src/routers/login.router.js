@@ -4,6 +4,6 @@ const userValidator = require('../middleweres/userValidator');
 
 const { validateBody, validateUser } = userValidator;
 const { createToken } = LoginController;
-login.get('/', validateBody, validateUser, createToken);
+login.post('/', validateBody, validateUser, createToken);
 
 module.exports = login;
