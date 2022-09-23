@@ -13,7 +13,7 @@ const createToken = async (rec, res) => {
     const { email } = rec.body;
     const user = await UserService.findbyEmail(email);
     const token = jwt.sign({ data: { userId: user.id } }, SECRET, jwtConfig);
-    res.status(200).json(token);
+    return res.status(200).json(token);
 };
 
 module.exports = { createToken };
