@@ -3,8 +3,8 @@ const LoginController = require('../controllers/login.controller');
 const userValidator = require('../middleweres/userValidator');
 
 const { validateBody, validateUser } = userValidator;
-const { createToken } = LoginController;
+const { createLoginToken } = LoginController;
 
-login.post('/', validateBody, validateUser, createToken);
+login.post('/', validateBody, validateUser, createLoginToken);
 
 module.exports = login;

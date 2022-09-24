@@ -9,11 +9,18 @@ const jwtConfig = {
     algorithm: 'HS256',
 };
 
-const createToken = async (rec, res) => {
+const createLoginToken = async (rec, res) => {
     const { email } = rec.body;
     const user = await UserService.findbyEmail(email);
     const token = jwt.sign({ data: { userId: user.id } }, SECRET, jwtConfig);
     return res.status(200).json({ token });
 };
 
-module.exports = { createToken };
+const createPostUserToken = async (rec, res) => {
+    const { email } = rec.body;
+    const user = await UserService.findbyEmail(email);
+    const token = jwt.sign({ data: { userId: user.id } }, SECRET, jwtConfig);
+    return res.status(201).json({ token });
+};
+
+module.exports = { createLoginToken, createPostUserToken };
