@@ -13,7 +13,7 @@ const BlogPostSchema = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        user_id: {
+        userId: {
             type: DataTypes.INTEGER,
             foreignKey: true,
         },
@@ -30,7 +30,7 @@ const BlogPostSchema = (sequelize, DataTypes) => {
     });
 
     BlogPostTable.associate = (models) => {
-        BlogPostTable.belongsTo(models.User, {
+        BlogPostTable.hasMany(models.User, {
             as: 'user',
             foreignKey: 'user_id',
         });
