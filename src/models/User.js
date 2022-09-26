@@ -1,5 +1,6 @@
 const UserSchema = (sequelize, DataTypes) => {
     const UserTable = sequelize.define('User', {
+        
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -27,14 +28,7 @@ const UserSchema = (sequelize, DataTypes) => {
         tableName: 'users',
         underscored: true,
     });
-/*
-    UserTable.associate = (models) => {
-        User.belongsToMany(models.blog_posts, {
-            as: 'blog_posts',
-            foreignKey: 'id',
-        });
-    };
-*/
+
     return UserTable;
 };
 
