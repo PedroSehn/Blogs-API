@@ -16,12 +16,14 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      user_id: {
+      userId: {
+        field: 'user_id',
         type: Sequelize.INTEGER,
         references: {
           model: 'users',
           key: 'id',
-        }
+        },
+        onDelete: 'CASCADE',
       },
       published: {
         type: Sequelize.DATE,
@@ -29,6 +31,8 @@ module.exports = {
       updated: {
         type: Sequelize.DATE,
       },
+    }, { 
+      underscored: true
     });
   },
 

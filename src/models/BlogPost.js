@@ -15,6 +15,7 @@ const BlogPostSchema = (sequelize, DataTypes) => {
             allowNull: false,
         },
         userId: {
+            field: 'user_id',
             type: DataTypes.INTEGER,
             foreignKey: true,
         },
@@ -33,7 +34,7 @@ const BlogPostSchema = (sequelize, DataTypes) => {
     BlogPostTable.associate = (models) => {
         BlogPostTable.hasMany(models.User, {
             as: 'user',
-            foreignKey: 'user_id',
+            foreignKey: 'id',
         });
     };
 
