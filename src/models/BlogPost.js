@@ -32,7 +32,7 @@ const BlogPostSchema = (sequelize, DataTypes) => {
     });
 
     BlogPostTable.associate = (models) => {
-        BlogPostTable.hasMany(models.User, {
+        BlogPostTable.belongsTo(models.User, {
             as: 'user',
             foreignKey: 'id',
         });
