@@ -16,8 +16,15 @@ const findbyEmail = async (email, _password) => {
     return result.dataValues;
 };
 
+const findById = async (id) => {
+    const user = await User.findByPk(id);
+    if (!user) return {};
+    return user;
+};
+
 module.exports = {
     getAllUsers,
     findbyEmail,
     createUser,
+    findById,
 };
