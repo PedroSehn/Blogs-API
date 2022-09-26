@@ -14,6 +14,7 @@ const createUser = async (rec, res, next) => {
 const findById = async (rec, res, _next) => {
     const { id } = rec.params;
     const user = await UserService.findById(id);
+    if (!user.id) return res.status(404).json({ message: 'User does not exist' });
     return res.status(200).json(user);
 };
 
