@@ -11,7 +11,14 @@ const createUser = async (rec, res, next) => {
     next();
 };
 
+const findById = async (rec, res, _next) => {
+    const { id } = rec.params;
+    const user = await UserService.findById(id);
+    return res.status(200).json(user);
+};
+
 module.exports = {
     getAllUsers,
     createUser,
+    findById,
 };
