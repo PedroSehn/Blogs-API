@@ -5,14 +5,16 @@
   <li> Desenvolver minhas habilidades no desenvolvimento de API'S </li>
   <li> Testar minhas habilidades em Sequelize </li>
   <li> Criar uma API para simular o gerenciamento de um site de Blogs </li>
+  <li> Desenvolver um sistema de login e validação de usuário</li>
 </ul>
 
 
 <h2>Tecnologias</h2>
 <ul>
-<li>Sequelize</li>
-<li>NodeJs</li>
-<li>Javascript</li>
-<li>.env</li>
-<li>SQL</li>
+  <li>Sequelize</li>
+  <li>NodeJs</li>
+  <li>Javascript</li>
+  <li>.env</li>
+  <li>SQL</li>
+  <li>JWT</li>
 </ul>
