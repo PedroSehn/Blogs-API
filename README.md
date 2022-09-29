@@ -1,9 +1,12 @@
 # Blogs API
 
 <h2>Objetivo do projeto</h2>
-- Desenvolver minhas habilidades no desenvolvimento de API'S
-- Testar minhas habilidades em Sequelize
-- Criar uma API para simular o gerenciamento de um site de Blogs
+<ul>
+  <li> Desenvolver minhas habilidades no desenvolvimento de API'S </li>
+  <li> Testar minhas habilidades em Sequelize </li>
+  <li> Criar uma API para simular o gerenciamento de um site de Blogs </li>
+</ul>
+
 
 <h2>Tecnologias</h2>
 - Sequelize
