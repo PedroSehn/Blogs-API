@@ -4,13 +4,9 @@ const LoginRouter = require('./routers/login.router');
 const CategoryRouter = require('./routers/categorie.router');
 const PostRouter = require('./routers/post.router');
 
-// ...
-
 const app = express();
 
 app.use(express.json());
-
-// ...
 
 app.use('/user', UserRouter);
 app.use('/login', LoginRouter);
