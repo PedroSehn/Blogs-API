@@ -9,8 +9,10 @@
 
 
 <h2>Tecnologias</h2>
-- Sequelize
-- NodeJs
-- Javascript
-- .env
-- SQL
+<ul>
+<li>Sequelize</li>
+<li>NodeJs</li>
+<li>Javascript</li>
+<li>.env</li>
+<li>SQL</li>
+</ul>
