@@ -19,5 +19,4 @@
   <li>JWT</li>
 </ul>
 
-<h2>Link para o site funcional</h2>
-https://pedrosehn.github.io/Pokedex/
+
